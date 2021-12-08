@@ -1,7 +1,6 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    # TODO: change origin to the deployed front-end client's domain address
-    origins 'http://localhost:3000'
+    origins 'https://bread-run-backend.herokuapp.com/'
 
     resource '*',
       headers: :any,
